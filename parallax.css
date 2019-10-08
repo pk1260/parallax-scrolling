@@ -1,17 +1,23 @@
 body {
     font-family: sans-serif;
     margin: 0;
-    padding: 0;
 }
 
 .sectie {
-    min-height: 60vw;
-    /*background-attachment: fixed;*/
+    background-attachment: fixed;
     background-size: cover;
+    margin: 0;
+    height: 20vh;
+}
+
+.sectie--achtergrond {
+    padding: 20vh 3em;
+    color: rgba(255,255,255, .9);
+    font-size: 2em;
 }
 
 .sectie--2 {
-    background-image: url("https://images.unsplash.com/photo-1480796927426-f609979314bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80");
+    background-image: url("https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2251&q=80");
 }
 
 .sectie--4 {
