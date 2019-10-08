@@ -9,16 +9,23 @@ window.addEventListener('scroll', (e)=> {
     corrSection2(scrollAstrand);
     corrSection4(scrollAstrand);
     corrSection6(scrollAstrand);
+    if ( scrollAstrand >= 1001) {
+        verwijderClassKop();
+    }
 })
 
 const corrSection2 = (gescrolled) => {
     sectie2.style.backgroundPositionY = -gescrolled/4 + "px";
     // links naar rechts scroll
-    sectie2.getElementsByClassName('sectie__kop')[0].style.marginLeft = -300 + gescrolled*2 + "px";
+    sectie2.getElementsByClassName('sectie--4__kop')[0].style.marginLeft = -300 + gescrolled*2 + "px";
 }
 const corrSection4 = (gescrolled) => {
     sectie4.style.backgroundPositionY = 200 -gescrolled/3 + "px";
 }
 const corrSection6 = (gescrolled) => {
-    sectie6.style.backgroundPositionY = -100gescrolled/2 + "px";
+    sectie6.style.backgroundPositionY = +50 -gescrolled/2 + "px";
+}
+
+const verwijderClassKop = ()=> {
+    document.querySelector('.sectie--4 h2').classList.remove('sectie--4__kop');
 }
