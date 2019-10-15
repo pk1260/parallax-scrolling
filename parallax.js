@@ -23,7 +23,7 @@ window.addEventListener('scroll', (e)=> {
 const corrSection2 = (gescrolled) => {
     sectie2.style.backgroundPositionY = -gescrolled/4 + "px";
     // links naar rechts scroll
-    // sectie2.getElementsByClassName('sectie--4__kop')[0].style.marginLeft = -300 + gescrolled*2 + "px";
+    sectie2.getElementsByClassName('sectie__kop')[0].style.marginLeft = -300 + gescrolled + 2 + "px";
 };
 
 const corrSection4 = (gescrolled) => {
